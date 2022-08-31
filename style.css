@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Lime Days';
+    src: url('fonts/Lime Days.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ header{
     text-align: center;
     text-shadow: 2px 2px 10px rgb(25, 121, 230);
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lime Days', 'sans-serif';
     margin: 30px;
 }
 
@@ -20,6 +25,8 @@ body{
 
 #players{
     font-size: 30px;
+    font-weight: 700;
+    margin: 10px 10px 20px;
 }
 
 .match-score{
@@ -32,4 +39,24 @@ body{
 #score{
     font-size: 2rem;
     color: aqua;
+}
+
+.rock-paper-scissors{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 8px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#options{
+    width: 150px;
+    margin: 10px 45px 0;
+    transition: all 0.5s;
+}
+
+#options:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
