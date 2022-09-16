@@ -19,3 +19,6 @@ form.addEventListener('submit', (e) =>{
     }   
 })
 
+window.onload = function(){
+    username.value = '';
+}
