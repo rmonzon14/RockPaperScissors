@@ -19,7 +19,7 @@ header{
 }
 
 body{
-    background-color: rgb(103, 91, 91);
+    background-color: rgba(52, 31, 25, 0.852);
     font-family: sans-serif;
 }
 
@@ -41,6 +41,12 @@ body{
     color: blue;
 }
 
+.rock-paper-scissors h4{
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
 .rock-paper-scissors{
     margin: 30px;
     padding: 20px;
@@ -52,7 +58,7 @@ body{
 
 #options{
     width: 150px;
-    margin: 10px 45px 0;
+    margin: 20px 45px 0;
     transition: all 0.5s;
 }
 
@@ -60,3 +66,4 @@ body{
     cursor: pointer;
     transform: scale(1.2);
 }
+
