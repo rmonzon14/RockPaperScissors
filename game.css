@@ -9,21 +9,21 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgba(52, 31, 25, 0.852);
+    font-family: sans-serif;
+}
+
 header{
     color: white;
     text-align: center;
     text-shadow: 2px 2px 10px rgb(25, 121, 230);
     font-size: 40px;
     font-family: 'Lime Days', 'sans-serif';
-    margin: 30px;
+    margin: 30px 30px 5px;
 }
 
-body{
-    background-color: rgba(52, 31, 25, 0.852);
-    font-family: sans-serif;
-}
-
-#players{
+.players{
     font-size: 30px;
     font-weight: 700;
     margin: 10px 10px 20px;
@@ -36,19 +36,14 @@ body{
     text-align: center;
 }
 
-#score{
+.score{
     font-size: 2rem;
     color: blue;
 }
 
-.rock-paper-scissors h4{
-    text-align: center;
-    color: white;
-    position: absolute;
-}
-
-.rock-paper-scissors{
-    margin: 30px;
+.options-container{
+    width: 60%;
+    margin: 30px auto;
     padding: 20px;
     border: black solid 8px;
     border-radius: 10%;
@@ -56,14 +51,29 @@ body{
     justify-content: center;
 }
 
-#options{
-    width: 150px;
+.options-container h4{
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.options{
+    min-width: 0;
     margin: 20px 45px 0;
     transition: all 0.5s;
 }
 
-#options:hover{
+.options:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+
+#round-info{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(25, 121, 230);
+    font-size: 40px;
+    font-family: 'Lime Days', 'sans-serif';
+    display: none;
 }
 

@@ -12,23 +12,28 @@
     <header>
         <h1>Beat Red!</h1>
     </header>
+    
     <div class="match-score">
         <div class="user-section">
-            <div class="user" id="players"></div>
-            <span class="user-score" id="score">0</span>
+            <div id="user" class="players"></div>
+            <span id="user-score" class="score">0</span>
         </div>
 
         <div class="red-section">
-            <div class="red" id="players">Red</div>
-            <span class="red-score" id="score">0</span>
+            <div id="red" class="players">Red</div>
+            <span id="red-score" class="score">0</span>
         </div>
     </div>
 
-    <div class="rock-paper-scissors">
+    <div class="options-container">
         <h4>Pick you choice</h4>
-        <img class="rock" id="options" src="images/rock.png" alt="Rock">
-        <img class="paper" id="options" src="images/paper.png" alt="Paper">
-        <img class="scissors" id="options" src="images/scissors.png" alt="Scissors">
+        <img id="rock" class="options" src="images/rock.png" alt="Rock">
+        <img id="paper" class="options" src="images/paper.png" alt="Paper">
+        <img id="scissors" class="options"w src="images/scissors.png" alt="Scissors">
+    </div>
+
+    <div id="round-info">
+        <p>Red chose <span id="red-picked"></span>. <span id="round-result"></span>!</p>
     </div>
 </body>
 </html>
