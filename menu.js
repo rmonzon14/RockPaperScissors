@@ -7,13 +7,13 @@ const error = document.querySelector('#error');
 username.addEventListener('keyup', () => {
     username.style.backgroundColor = "red";
 
-    if(username.value === '' || username.value == null){
+    if (username.value === '' || username.value == null) {
         username.style.backgroundColor = "white";
     }
 })
 
-form.addEventListener('submit', (e) =>{
-    if(username.value === '' || username.value == null){
+form.addEventListener('submit', (e) => {
+    if (username.value === '' || username.value == null) {
         error.style.display = 'block';
         username.setAttribute('style', 'border-color: red; border-width: 3px');
         e.preventDefault();
@@ -22,6 +22,6 @@ form.addEventListener('submit', (e) =>{
     localStorage.setItem('player', playerName);                                           
 })
 
-window.onload = function(){
+window.onload = function() {
     username.value = '';
 }
