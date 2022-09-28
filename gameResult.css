@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(52, 31, 25, 0.852);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 15px rgb(50, 14, 230);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result-header {
+    font-family: 'Lime Days', 'sans-serif';
+    margin-bottom: 7px;
+}
+
+.final-score {
+    margin-bottom: 10px;
+    padding: 4px;
+    border-bottom: 1px solid black;
+}
+
+.gift-description {
+    margin-bottom: 5px 2px 40px 5px;
+}
+
+.gift {
+    margin: 30px 0;
+    transition: 0.2s ease-in;
+}
+
+.gift:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.play-again {
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
