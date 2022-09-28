@@ -8,7 +8,7 @@ const userScore = localStorage.getItem('userScore');
 const redScore = localStorage.getItem('redScore');
 
 const finalScore = document.createElement('p');
-finalScore.innerHTML = `The file score is: ${userScore} - ${redScore}`;
+finalScore.innerHTML = `The final score is: ${userScore} - ${redScore}`;
 finalScore.classList.add('final-score');
 container.appendChild(finalScore);
 
