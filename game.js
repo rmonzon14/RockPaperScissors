@@ -17,16 +17,6 @@ function getRedChoice() {
     return choices[choicePicker];
 }
 
-function updateScore(player) {
-    player.innerHTML = parseInt(player.innerHTML) + 1;    
-}
-
-function displayRoundInfo(redChoice, result) {
-    roundInfo.style.display = 'block';
-    redPicked.textContent = redChoice;
-    roundResult.textContent = result;
-}
-
 function getResult(userChoice) {
     const redChoice = getRedChoice();
     const checkResult =  redChoice + userChoice;
@@ -34,7 +24,6 @@ function getResult(userChoice) {
         case 'scissorspaper':
         case 'paperrock':
         case 'rockscissors':
-            console.log("you lose")
             updateScore(redScore)
             displayRoundInfo(redChoice, 'You lost!')
             break;
@@ -52,6 +41,23 @@ function getResult(userChoice) {
     }
 }
 
+function updateScore(player) {
+    player.innerHTML = parseInt(player.innerHTML) + 1;
+
+    if (player.innerHTML == 10) {
+        localStorage.setItem('userScore', userScore.innerHTML);
+        localStorage.setItem('redScore', redScore.innerHTML);
+    
+        window.location.href = 'gameResult.html';  
+    }
+}
+
+function displayRoundInfo(redChoice, result) {
+    roundInfo.style.display = 'block';
+    redPicked.textContent = redChoice;
+    roundResult.textContent = result;
+}
+
 function playRound() {
     rock.addEventListener('click', ()  => {
         getResult('rock');
@@ -65,7 +71,5 @@ function playRound() {
 }
 
 playRound();
-
-
 
 
