@@ -9,7 +9,7 @@ const redPicked = document.getElementById('red-picked');
 const roundResult = document.getElementById('round-result');
 
 // Sets the username of the user. 
-user.innerHTML = localStorage.getItem('player');
+user.textContent = localStorage.getItem('player');
 
 function getRedChoice() {
     const choices = ['rock', 'paper', 'scissors'];
@@ -42,11 +42,11 @@ function getResult(userChoice) {
 }
 
 function updateScore(player) {
-    player.innerHTML = parseInt(player.innerHTML) + 1;
+    player.textContent = parseInt(player.textContent) + 1;
 
-    if (player.innerHTML == 10) {
-        localStorage.setItem('userScore', userScore.innerHTML);
-        localStorage.setItem('redScore', redScore.innerHTML);
+    if (player.textContent == 10) {
+        localStorage.setItem('userScore', userScore.textContent);
+        localStorage.setItem('redScore', redScore.textContent);
     
         window.location.href = 'gameResult.html';  
     }
