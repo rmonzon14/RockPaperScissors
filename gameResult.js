@@ -8,7 +8,7 @@ const userScore = localStorage.getItem('userScore');
 const redScore = localStorage.getItem('redScore');
 
 const finalScore = document.createElement('p');
-finalScore.innerHTML = `The final score is: ${userScore} - ${redScore}`;
+finalScore.textContent = `The final score is: ${userScore} - ${redScore}`;
 finalScore.classList.add('final-score');
 container.appendChild(finalScore);
 
@@ -16,7 +16,7 @@ const createGift = () => {
     const giftDescription = document.createElement('h4');
     giftDescription.classList.add('gift-description');
 
-    giftDescription.innerHTML = 'Click the gift icon to open your gift';
+    giftDescription.textContent = 'Click the gift icon to open your gift';
 
     const gift = document.createElement('img');
     gift.src = 'images/gift.png';
@@ -43,16 +43,16 @@ const creatSadFace = () => {
 }
 
 if (userScore < redScore) {
-    header.innerHTML = 'Congratulations, you beat Red!';
+    header.textContent = 'Congratulations, you beat Red!';
     createGift();
 } else {
-    header.innerHTML = 'You lost to Red!';
+    header.textContent = 'You lost to Red!';
     creatSadFace();
 }
 
 const playAgain = document.createElement('a');
 playAgain.href = 'game.html';
-playAgain.innerHTML = 'Play again';
+playAgain.textContent = 'Play again';
 playAgain.classList.add('play-again');
 container.appendChild(playAgain);
 
